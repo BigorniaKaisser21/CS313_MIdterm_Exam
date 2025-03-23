@@ -1,0 +1,218 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.product {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.container > .product > h4 {
+    left: 8px;
+    top: 50px;
+    color: black;
+    font-size: 20px;
+    margin: 12px;
+}
+
+.container > .product > h1 {
+    left: 8px;
+    top: 50px;
+    color: #015551;
+}
+
+.product > img {
+    border-radius: 10px;
+}
+
+img {
+    height: 250px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+nav {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    background-color: #0b5563;
+}
+nav > .buttons {
+    background-color: #0b5563;
+    text-align: center;
+    align-content: center;
+    height: 100px;
+}
+nav > .buttons > a {
+    text-decoration: none;
+    color: white;
+}
+nav img {
+    width: 10PX;
+    height: 10px;
+    border-radius: 5px;
+}
+nav > p {
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 31px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 12px;
+    gap: 12px;
+    background-color: white;
+}
+
+.grid > div {
+    background-color: gray;
+    width: 100%;
+    max-width: 400px; 
+    padding: 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.grid img {
+    width: 100%;
+    max-width: 150px; 
+    max-height: 150px;
+}
+.grid h4 {
+    font-size: 20px;
+    margin: 12px;
+}
+.grid p {
+    font-size: 15px;
+    margin: 12px;
+    word-wrap: break-word;
+    padding: 0;
+}
+
+.grid button {
+    padding: 5px 10px;
+    font-size: 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: green;
+    border-radius: 4px;
+    color: white;
+}
+
+.grid > .product {
+    border: 1px solid black;
+}
+
+.grid > .product > .remove_from_cart {
+    background-color: #AA4A44;
+    color: white;
+    width: 60%;
+    margin-bottom: 12px;
+}
+
+.grid > .product > .add_to_cart {
+    width: 60%;
+    margin-bottom: 12px;
+}
+
+.hero {
+    background-image: url('../assets/hero.png');
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 50vh;
+    position: relative; 
+}
+
+.hero::after {
+    content: "Nobunaga and Okita Souji"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    opacity: 0; 
+    transition: opacity 0.5s; 
+}
+
+.hero:hover::after {
+    opacity: 1;
+}
+
+.cart {
+    height: 120px;
+    text-align: center;
+    background-color: #56282d;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 1fr; 
+}
+
+aside {
+    border: 0;
+    padding-top: 12px;
+    background-color: #56282d;
+    color: white;
+}
+
+footer {
+    height: 120px;
+    text-align: center;
+    background-color: #0b5563;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    margin: 0;
+    border: 2px solid black;
+    aspect-ratio: 3/4;
+}
+
+.total-cart-price {
+    margin-top: 12px;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    padding: 9px;
+    color: white;
+    background-color: green;
+}
+
+.list_of_items {
+    background-color: white;
+    padding: 2px;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
